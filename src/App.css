@@ -1,38 +1,59 @@
-.App {
+.nav-container{
   text-align: center;
+  margin-top: 30px;
+  background: lightseagreen;
+  padding: 20px;
+  border-radius: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav-container > .nav-link {
+  margin-right: 50px;
+  background: teal;
+  border-radius: 4px;
+  font-size: 30px;
   color: white;
+  padding: 10px;
+}
+.nav-container > .nav-link:hover {
+  margin-right: 50px;
+  background: #78c5c5;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.productContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.productContainer > .link {
+  text-align: center;
+  width: 17%;
+  box-shadow: 53px 28px 72px -8px rgba(39, 24, 180, 0.45);
+  margin: 10px;
+  padding: 30px;
+  /* border: 1px solid black; */
+}
+.productContainer > .link > h2 {
+  white-space: break-spaces;
+}
+.link{
+  text-align: center;
+  /* width: 17%; */
+  /* box-shadow: 53px 28px 72px -8px rgba(39, 24, 180, 0.45); */
+  margin: 10px;
+  padding: 30px;
+}
+.link > h2 {
+  white-space: break-spaces;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.productContainer > .link:hover {
+  background-color: rgb(120, 145, 161);
+}
+
+.center{
+  text-align: center;
 }
